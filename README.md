@@ -3,6 +3,8 @@
 This Python tool intercepts HTTP traffic and **injects custom JavaScript code** into HTML pages in transit.  
 It works by modifying HTTP responses on the fly and inserting your payload before they reach the victim’s browser.
 
+---
+
 ## ⚠ Disclaimer
 
     This tool is intended **only for authorized penetration testing and educational purposes**.  
@@ -11,6 +13,8 @@ It works by modifying HTTP responses on the fly and inserting your payload befor
 
     The author is not responsible for any misuse or damage caused.
 
+---
+
 ## 📌 Features
     - Intercepts and modifies HTTP traffic
     - Removes `Accept-Encoding` to prevent compression
@@ -18,7 +22,18 @@ It works by modifying HTTP responses on the fly and inserting your payload befor
     - Adjusts `Content-Length` header automatically to prevent page breakage
     - Works on Python 2
 
-🚀 Usage
+---
+
+## 🛠 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Nozarashi-1/code-injector.git
+cd code-injector
+```
+---
+
+## 🚀 Usage
 1. Edit the payload
 In the script, find:
 
